@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ds-ml-engineering-copilot",
+  "version": "0.1.0",
+  "description": "A practical Data Science and Machine Learning engineering copilot for dataset analysis, ML workflow design, root-cause debugging, model evaluation, and deployment guidance.",
+  "author": {
+    "name": "Personal workflow"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "DS/ML Engineering Copilot",
+        "shortDescription": "Data science & ML workflows",
+        "longDescription": "An engineering-focused assistant for profiling datasets, designing reliable machine-learning workflows, debugging Python and ML errors, evaluating models, and planning deployment. It explains decisions clearly, uses evidence from the supplied data and code, and prioritizes maintainable, reproducible solutions over quick hacks.",
+        "developerName": "Personal workflow",
+        "category": "Productivity",
+        "capabilities": ["Code", "Data analysis", "Interactive"],
+        "defaultPrompt": [
+          "Profile this dataset, identify data-quality issues, and recommend the next analysis steps.",
+          "Debug this Python or machine-learning error. Find the root cause before suggesting a fix.",
+          "Design a reliable end-to-end machine-learning workflow for my problem. Explain the trade-offs."
+        ]
+      }
+    }
+  }
+}
